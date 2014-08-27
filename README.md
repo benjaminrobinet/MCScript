@@ -28,3 +28,11 @@ STARTFILE="run" # If exist this file will be execute to run server (Can be put i
 START="java -Xms512M -Xmx2048M -jar $SERVER" # If startfile doesn't exist, script will be execute it to run server
 ```
 Note: All files in the default folder will be copied.
+
+Run
+===
+
+```sh
+sh server.sh
+Utilisation: server.sh {create <serveur>|start <serveur>|stop <serveur>|status <serveur>|command <serveur> <commande>}
+```
