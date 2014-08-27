@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #Params
-SRVDEFAULT="/home/minecraft/servers/default"
-SRVPATH="/home/minecraft/servers"
-SERVER="server.jar"
-START="java -Xms512M -Xmx2048M -jar $SERVER"
-STARTFILE="run"
+SRVDEFAULT="/home/minecraft/servers/default" # If exist this path will be copy everytime you create a server else the latest beta build of Craftbukkit will be installed
+SRVPATH="/home/minecraft/servers" # This path define where every servers will be installed
+SERVER="server.jar" # Name of the jar file (If jar file is in default directory, need to be the same name of the default)
+STARTFILE="run" # If exist this file will be execute to run server (Can be put in the default directory to auto add this file at the creation of every servers)
+START="java -Xms512M -Xmx2048M -jar $SERVER" # If startfile doesn't exist, script will be execute it to run server
 
 create() {
   ASKEDSRV=$1
